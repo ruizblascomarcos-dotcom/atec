@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Heart, Star, BookOpen } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import TeamMember from "@/components/TeamMember";
@@ -52,11 +53,15 @@ export default function SobreNosotrosPage() {
               un equipo de 7 profesionales.
             </p>
           </div>
-          <div
-            className="aspect-[4/3] w-full rounded bg-gray-200"
-            role="img"
-            aria-label="Imagen del taller ATEC en Castellón"
-          />
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded">
+            <Image
+              src="/historia-camiones.png"
+              alt="Camiones de transporte circulando por carretera"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
