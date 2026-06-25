@@ -75,7 +75,7 @@ export default function WhatsAppButton() {
         className="transition-transform hover:scale-105 active:scale-95"
       >
         <Image
-          src="/whatsapp.png"
+          src="/whatsapp-badge.png"
           alt="WhatsApp"
           width={64}
           height={64}
