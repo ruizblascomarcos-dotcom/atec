@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { BatteryCharging, Sun, Truck, type LucideIcon } from "lucide-react";
 import PageHero from "@/components/PageHero";
-import CTABanner from "@/components/CTABanner";
 
 export const metadata: Metadata = {
   title: "Subvenciones | ATEC SL — Taller para camiones en Castellón",
@@ -83,11 +82,6 @@ export default function SubvencionesPage() {
           tu caso? Te orientamos sin compromiso.
         </p>
       </section>
-
-      <CTABanner
-        title="¿Quieres modernizar tu tacógrafo con ayudas?"
-        subtitle="Te explicamos cómo acogerte al Cheque Moderniza y te lo gestionamos."
-      />
     </>
   );
 }
