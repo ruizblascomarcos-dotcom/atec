@@ -16,7 +16,7 @@ type LogoProps = {
 const LOGOS: Record<LogoVariant, { src: string; width: number; height: number }> = {
   default: { src: "/logo.jpg", width: 500, height: 500 },
   light: { src: "/logo-invert.jpg", width: 500, height: 500 },
-  footer: { src: "/logo-footer.jpg", width: 500, height: 200 },
+  footer: { src: "/logo-footer.jpg", width: 500, height: 214 },
 };
 
 export default function Logo({
