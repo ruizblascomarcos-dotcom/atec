@@ -1,43 +1,31 @@
+import Image from "next/image";
+
 type LogoProps = {
-  /** Variant: "default" for light backgrounds, "light" for dark backgrounds */
+  /** "default" para fondos claros, "light" para fondos oscuros/coral */
   variant?: "default" | "light";
-  showTagline?: boolean;
+  /** Clases extra para ajustar el tamaño de la imagen (ej. "h-16") */
+  className?: string;
 };
 
 /**
- * Logo ATEC: rectángulo rojo con las letras A T E C en blanco
- * (Barlow Condensed bold) y un descriptor debajo.
+ * Logo oficial de ATEC. Usa la versión adecuada según el fondo:
+ * - default → caja roja sobre fondo claro (Navbar)
+ * - light   → versión invertida sobre fondo coral/oscuro (Footer)
  */
 export default function Logo({
   variant = "default",
-  showTagline = true,
+  className = "h-12",
 }: LogoProps) {
-  const taglineColor = variant === "light" ? "text-white/70" : "text-muted";
+  const src = variant === "light" ? "/logo-invert.jpg" : "/logo.jpg";
 
   return (
-    <div className="flex items-center gap-3">
-      <div
-        className="flex items-center bg-primary px-2.5 py-1"
-        aria-hidden="true"
-      >
-        {["A", "T", "E", "C"].map((letter, i) => (
-          <span
-            key={letter}
-            className={`font-display text-2xl font-bold leading-none text-white ${
-              i > 0 ? "border-l border-white/40 pl-1.5 ml-1.5" : ""
-            }`}
-          >
-            {letter}
-          </span>
-        ))}
-      </div>
-      {showTagline && (
-        <span
-          className={`hidden text-[11px] font-medium uppercase tracking-wide sm:block ${taglineColor}`}
-        >
-          Tacógrafos · Electricidad · Castellón
-        </span>
-      )}
-    </div>
+    <Image
+      src={src}
+      alt="ATEC — Centro Técnico de Tacógrafos"
+      width={500}
+      height={500}
+      priority
+      className={`${className} w-auto`}
+    />
   );
 }

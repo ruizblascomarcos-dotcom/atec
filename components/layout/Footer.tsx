@@ -9,7 +9,7 @@ export default function Footer() {
       {/* Banda superior en color primario con el logo */}
       <div className="bg-primary">
         <div className="container-atec flex items-center py-5">
-          <Logo variant="light" showTagline={false} />
+          <Logo variant="light" className="h-16" />
         </div>
       </div>
 
