@@ -106,5 +106,5 @@ export const contact = {
   email: "atecsal@atecsal.es",
   address: "Av. de Lairón, 59, 12006 Castellón de la Plana",
   maps: "https://maps.app.goo.gl/dXGyGgVxda7GAk1eA",
-  hours: "Lunes a viernes, 8:00–18:00 (consulta disponibilidad)",
+  hours: "Lunes a viernes, 8:00–13:00 y 15:00–18:00",
 };
