@@ -85,14 +85,17 @@ export const team: TeamMemberData[] = [
   {
     name: "Alejandro Estopiña",
     role: "Técnico de taller",
+    image: "/equipo/gorra.png",
   },
   {
     name: "Miguel Carrillo",
     role: "Técnico de taller",
+    image: "/equipo/gorra.png",
   },
   {
     name: "Manuel Martínez",
     role: "Técnico de taller",
+    image: "/equipo/gorra.png",
   },
 ];
 
