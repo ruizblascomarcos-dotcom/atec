@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Clock, ShieldCheck, MapPin } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
-import TeamMember from "@/components/TeamMember";
 import CTABanner from "@/components/CTABanner";
-import { services, team } from "@/lib/data";
+import { services } from "@/lib/data";
 
 const valueProps = [
   {
@@ -117,17 +116,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Sección 6 — Equipo */}
-      <section className="container-atec py-16 sm:py-20">
-        <h2 className="text-3xl font-bold sm:text-4xl">El equipo ATEC</h2>
-        <div className="mt-12 grid grid-cols-2 gap-10 sm:grid-cols-3">
-          {team.map((m) => (
-            <TeamMember key={m.name} name={m.name} role={m.role} />
-          ))}
-        </div>
-      </section>
-
-      {/* Sección 7 — CTA final */}
+      {/* Sección 6 — CTA final */}
       <CTABanner />
     </>
   );
