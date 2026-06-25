@@ -49,7 +49,7 @@ export default function SobreNosotrosPage() {
               servicio cercano y profesional en Castellón, especializado en la
               electromecánica de camiones. Hoy somos un centro técnico de
               tacógrafos certificado y taller de electricidad para camiones, con
-              un equipo de 6 profesionales.
+              un equipo de 7 profesionales.
             </p>
           </div>
           <div
@@ -83,9 +83,14 @@ export default function SobreNosotrosPage() {
           Un equipo de profesionales especializados en la electromecánica de
           camiones, comprometidos con un servicio cercano y de calidad.
         </p>
-        <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3">
+        <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4">
           {team.map((m) => (
-            <TeamMember key={m.name} name={m.name} role={m.role} />
+            <TeamMember
+              key={m.name}
+              name={m.name}
+              role={m.role}
+              image={m.image}
+            />
           ))}
         </div>
       </section>

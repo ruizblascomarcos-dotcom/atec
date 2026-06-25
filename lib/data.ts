@@ -57,32 +57,42 @@ export const services: Service[] = [
 export type TeamMemberData = {
   name: string;
   role: string;
+  /** Ruta a la foto en /public. Si no hay, se muestran las iniciales. */
+  image?: string;
 };
 
 export const team: TeamMemberData[] = [
   {
-    name: "Guillermo Álvarez Muniesa",
+    name: "Guillermo Álvarez",
     role: "Socio fundador y técnico de tacógrafos",
+    image: "/equipo/guillermo.png",
   },
   {
-    name: "Ángel Vivó Muñoz",
+    name: "Ángel Vivó",
     role: "Socio fundador y técnico de tacógrafos",
+    image: "/equipo/angel.png",
   },
   {
-    name: "Jordi Ortiz Ortiz",
+    name: "Kevin Vivó",
+    role: "Administración y gestión",
+    image: "/equipo/kevin.png",
+  },
+  {
+    name: "Clara Villarroya",
+    role: "Contabilidad y administración",
+    image: "/equipo/clara.png",
+  },
+  {
+    name: "Alejandro Estopiña",
     role: "Técnico de taller",
   },
   {
-    name: "Marin Dinca",
-    role: "Técnico de tacógrafos y otras reparaciones",
+    name: "Miguel Carrillo",
+    role: "Técnico de taller",
   },
   {
-    name: "Kevin Vivó García",
-    role: "Administración y gestión",
-  },
-  {
-    name: "Clara Villarroya Gargallo",
-    role: "Contabilidad y administración",
+    name: "Manuel Martínez",
+    role: "Técnico de taller",
   },
 ];
 
