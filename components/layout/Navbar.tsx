@@ -34,7 +34,7 @@ export default function Navbar() {
     >
       <nav className="container-atec flex h-16 items-center justify-between">
         <Link href="/" aria-label="Inicio — ATEC SL">
-          <Logo />
+          <Logo className="h-10" />
         </Link>
 
         {/* Navegación desktop */}
@@ -119,7 +119,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="fixed inset-0 z-50 bg-white lg:hidden">
           <div className="container-atec flex h-16 items-center justify-between border-b border-border">
-            <Logo />
+            <Logo className="h-10" />
             <button
               type="button"
               onClick={() => setMobileOpen(false)}
