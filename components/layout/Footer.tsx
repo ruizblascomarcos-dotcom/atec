@@ -6,10 +6,10 @@ import { services, contact } from "@/lib/data";
 export default function Footer() {
   return (
     <footer className="bg-dark text-white">
-      {/* Banda superior en color primario con el logo */}
-      <div className="bg-primary">
-        <div className="container-atec flex items-center py-5">
-          <Logo variant="light" className="h-16" />
+      {/* Banda superior con el logo sobre fondo claro */}
+      <div className="bg-white">
+        <div className="container-atec flex items-center py-6">
+          <Logo variant="footer" className="h-14" />
         </div>
       </div>
 
