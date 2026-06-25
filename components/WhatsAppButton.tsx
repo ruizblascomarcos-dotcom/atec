@@ -51,7 +51,6 @@ export default function WhatsAppButton() {
               <Send className="h-4 w-4" aria-hidden="true" />
               Iniciar chat
             </a>
-            <p className="mt-2 text-center text-xs text-muted">{contact.phone}</p>
           </div>
         </div>
       )}
