@@ -81,6 +81,13 @@ export default function Navbar() {
           </div>
 
           <Link
+            href="/subvenciones"
+            className="text-sm font-medium hover:text-primary"
+          >
+            Subvenciones
+          </Link>
+
+          <Link
             href="/contacto"
             className="text-sm font-medium hover:text-primary"
           >
@@ -150,6 +157,13 @@ export default function Navbar() {
                 {s.title}
               </Link>
             ))}
+            <Link
+              href="/subvenciones"
+              onClick={() => setMobileOpen(false)}
+              className="py-3 text-lg font-medium"
+            >
+              Subvenciones
+            </Link>
             <Link
               href="/contacto"
               onClick={() => setMobileOpen(false)}
