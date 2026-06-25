@@ -18,17 +18,7 @@ export default function WhatsAppButton() {
         <div className="w-[300px] overflow-hidden rounded-lg border border-border bg-white shadow-xl">
           {/* Cabecera */}
           <div className="flex items-center gap-3 bg-[#075E54] px-4 py-3 text-white">
-            <Image
-              src="/whatsapp.png"
-              alt=""
-              width={40}
-              height={40}
-              className="h-10 w-10"
-            />
-            <div className="flex-1 leading-tight">
-              <p className="font-semibold">ATEC SL</p>
-              <p className="text-xs text-white/80">Normalmente responde en minutos</p>
-            </div>
+            <p className="flex-1 font-semibold">Respondemos en minutos</p>
             <button
               type="button"
               onClick={() => setOpen(false)}
