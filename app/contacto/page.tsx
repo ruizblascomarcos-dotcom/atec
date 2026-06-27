@@ -66,12 +66,15 @@ export default function ContactoPage() {
                 </span>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <a
-                    href={`mailto:${contact.email}`}
-                    className="text-muted hover:text-primary"
-                  >
-                    {contact.email}
-                  </a>
+                  {contact.emails.map((email) => (
+                    <a
+                      key={email}
+                      href={`mailto:${email}`}
+                      className="block text-muted hover:text-primary"
+                    >
+                      {email}
+                    </a>
+                  ))}
                 </div>
               </li>
 
