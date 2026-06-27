@@ -38,9 +38,14 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-white/80">
             <li className="flex items-start gap-2">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-              <a href={`tel:${contact.phoneIntlRaw}`} className="hover:text-primary">
-                {contact.phoneIntl}
-              </a>
+              <span className="flex flex-col">
+                <a href={`tel:${contact.phoneIntlRaw}`} className="hover:text-primary">
+                  {contact.phoneIntl}
+                </a>
+                <a href={`tel:${contact.landlineRaw}`} className="hover:text-primary">
+                  {contact.landline}
+                </a>
+              </span>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
