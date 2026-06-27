@@ -56,7 +56,6 @@ export default function ContactoPage() {
                     >
                       {contact.landline}
                     </a>
-                    <span className="text-muted"> (fijo)</span>
                   </p>
                 </div>
               </li>
