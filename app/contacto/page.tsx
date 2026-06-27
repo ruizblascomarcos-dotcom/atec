@@ -110,13 +110,12 @@ export default function ContactoPage() {
             </p>
             <div className="mt-6 overflow-hidden rounded border border-border">
               <iframe
-                src="https://calendar.google.com/calendar/embed?src=atecsal%40atecsal.es&ctz=Europe%2FMadrid"
-                title="Calendario de citas de ATEC SL"
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ39FWzsgzhwcB_wo9oQGDcFy3e88q2sWr_ZpYn98IgSGRwxXwEWhd6EXbAbjCSNzaejqiqo8v0I?gv=true"
+                title="Reserva de cita en el taller ATEC"
                 style={{ border: 0 }}
                 width="100%"
                 height={600}
                 frameBorder={0}
-                scrolling="no"
                 className="w-full"
               />
             </div>
