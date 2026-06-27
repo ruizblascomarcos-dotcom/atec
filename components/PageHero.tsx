@@ -35,7 +35,7 @@ export default function PageHero({
         )}
         {showCTA && (
           <div className="mt-8">
-            <Link href="/contacto" className="btn-primary">
+            <Link href="/contacto#reservar" className="btn-primary">
               Pedir cita
             </Link>
           </div>

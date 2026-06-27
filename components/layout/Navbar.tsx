@@ -94,14 +94,14 @@ export default function Navbar() {
             Contacto
           </Link>
 
-          <Link href="/contacto" className="btn-primary py-2 text-sm">
+          <Link href="/contacto#reservar" className="btn-primary py-2 text-sm">
             Pedir cita
           </Link>
         </div>
 
         {/* Acciones móvil */}
         <div className="flex items-center gap-3 lg:hidden">
-          <Link href="/contacto" className="btn-primary py-2 text-sm">
+          <Link href="/contacto#reservar" className="btn-primary py-2 text-sm">
             Pedir cita
           </Link>
           <button
@@ -172,7 +172,7 @@ export default function Navbar() {
               Contacto
             </Link>
             <Link
-              href="/contacto"
+              href="/contacto#reservar"
               onClick={() => setMobileOpen(false)}
               className="btn-primary mt-4"
             >

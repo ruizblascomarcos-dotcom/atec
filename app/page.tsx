@@ -39,7 +39,7 @@ export default function HomePage() {
             rápido y próximo para transportistas y flotas en Castellón.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Link href="/contacto" className="btn-primary">
+            <Link href="/contacto#reservar" className="btn-primary">
               Pedir cita
             </Link>
             <Link href="#servicios" className="btn-secondary-light">

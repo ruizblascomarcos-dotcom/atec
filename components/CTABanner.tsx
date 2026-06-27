@@ -17,7 +17,7 @@ export default function CTABanner({
         <h2 className="text-3xl font-bold sm:text-4xl">{title}</h2>
         <p className="mx-auto mt-3 max-w-xl text-muted">{subtitle}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link href="/contacto" className="btn-primary">
+          <Link href="/contacto#reservar" className="btn-primary">
             Pedir cita
           </Link>
           <a href={`tel:${contact.phoneRaw}`} className="btn-secondary">

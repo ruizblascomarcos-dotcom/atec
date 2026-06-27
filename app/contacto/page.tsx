@@ -103,7 +103,7 @@ export default function ContactoPage() {
           </div>
 
           {/* Columna derecha — Reserva de cita (Google Calendar) */}
-          <div>
+          <div id="reservar" className="scroll-mt-24">
             <h2 className="text-2xl font-bold">Reserva tu cita</h2>
             <p className="mt-2 text-muted">
               Consulta nuestra disponibilidad y pide cita directamente.
