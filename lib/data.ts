@@ -108,7 +108,7 @@ export const contact = {
   landlineRaw: "+34964241031",
   whatsapp: "https://wa.me/618617221",
   email: "atecsal@atecsal.es",
-  address: "Av. de Lairón, 59, 12006 Castellón de la Plana",
+  address: "Av. de Lairón, 59, Ciudad del Transporte, 12006 Castellón de la Plana",
   maps: "https://maps.app.goo.gl/dXGyGgVxda7GAk1eA",
   hours: "Lunes a viernes, 8:00–13:00 y 15:00–18:00",
 };
