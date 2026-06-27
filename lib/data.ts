@@ -102,6 +102,10 @@ export const team: TeamMemberData[] = [
 export const contact = {
   phone: "618 617 221",
   phoneRaw: "618617221",
+  phoneIntl: "+34 618 617 221",
+  phoneIntlRaw: "+34618617221",
+  landline: "+34 964 241 031",
+  landlineRaw: "+34964241031",
   whatsapp: "https://wa.me/618617221",
   email: "atecsal@atecsal.es",
   address: "Av. de Lairón, 59, 12006 Castellón de la Plana",

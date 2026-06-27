@@ -32,21 +32,32 @@ export default function ContactoPage() {
                 </span>
                 <div>
                   <p className="font-semibold">Teléfono / WhatsApp</p>
-                  <a
-                    href={`tel:${contact.phoneRaw}`}
-                    className="text-muted hover:text-primary"
-                  >
-                    {contact.phone}
-                  </a>
-                  <span className="text-muted"> · </span>
-                  <a
-                    href={contact.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted hover:text-primary"
-                  >
-                    WhatsApp
-                  </a>
+                  <p>
+                    <a
+                      href={`tel:${contact.phoneIntlRaw}`}
+                      className="text-muted hover:text-primary"
+                    >
+                      {contact.phoneIntl}
+                    </a>
+                    <span className="text-muted"> · </span>
+                    <a
+                      href={contact.whatsapp}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted hover:text-primary"
+                    >
+                      WhatsApp
+                    </a>
+                  </p>
+                  <p className="mt-1">
+                    <a
+                      href={`tel:${contact.landlineRaw}`}
+                      className="text-muted hover:text-primary"
+                    >
+                      {contact.landline}
+                    </a>
+                    <span className="text-muted"> (fijo)</span>
+                  </p>
                 </div>
               </li>
 
