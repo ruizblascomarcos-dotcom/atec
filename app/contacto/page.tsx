@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
 import { contact } from "@/lib/data";
+import ScrollToReservar from "@/components/ScrollToReservar";
 
 export const metadata: Metadata = {
   title: "Contacto | ATEC SL — Taller para camiones en Castellón",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function ContactoPage() {
   return (
     <>
+      <ScrollToReservar />
       <section className="container-atec py-16 sm:py-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Columna izquierda — Información */}
