@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
-import ContactForm from "@/components/ContactForm";
 import { contact } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -103,9 +102,24 @@ export default function ContactoPage() {
             </div>
           </div>
 
-          {/* Columna derecha — Formulario */}
+          {/* Columna derecha — Reserva de cita (Google Calendar) */}
           <div>
-            <ContactForm />
+            <h2 className="text-2xl font-bold">Reserva tu cita</h2>
+            <p className="mt-2 text-muted">
+              Consulta nuestra disponibilidad y pide cita directamente.
+            </p>
+            <div className="mt-6 overflow-hidden rounded border border-border">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?src=atecsal%40atecsal.es&ctz=Europe%2FMadrid"
+                title="Calendario de citas de ATEC SL"
+                style={{ border: 0 }}
+                width="100%"
+                height={600}
+                frameBorder={0}
+                scrolling="no"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
       </section>
