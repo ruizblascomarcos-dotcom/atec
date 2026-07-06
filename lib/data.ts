@@ -18,10 +18,10 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: "tacografos",
-    title: "Centro técnico de tacógrafos",
+    title: "Centro técnico de tacógrafos y limitadores",
     shortName: "Tacógrafos",
     description:
-      "Instalación, calibración y mantenimiento. Cumplimiento normativo para tu flota.",
+      "Instalación, calibración y mantenimiento de tacógrafos, limitadores y alcoholímetros. Licencia especial, pioneros en Castellón.",
     icon: Gauge,
     href: "/servicios/tacografos",
   },

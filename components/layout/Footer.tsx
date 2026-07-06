@@ -91,7 +91,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-atec py-6 text-center text-xs text-white/60">
-          © 2025 ATEC SL — Todos los derechos reservados
+          © 2026 ATEC SL — Todos los derechos reservados
         </div>
       </div>
     </footer>

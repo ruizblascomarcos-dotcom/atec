@@ -49,7 +49,6 @@ components/
   TeamMember.tsx
   FAQ.tsx                           # Acordeón
   CTABanner.tsx
-  ContactForm.tsx                   # Validación cliente + envío simulado
 lib/
   data.ts                           # Servicios, equipo y datos de contacto
 ```
@@ -70,7 +69,7 @@ lib/
 
 ## Notas
 
-- El formulario de contacto no tiene backend: simula el envío con estado local
-  y muestra un mensaje de éxito.
+- La reserva de cita en `/contacto` usa un iframe embebido de Google Calendar
+  Appointments (sin backend propio).
 - Las fotos del equipo usan placeholders con iniciales.
 - Tel/WhatsApp: `618 617 221` · Email: `atecsal@atecsal.es`

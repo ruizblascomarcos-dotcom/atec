@@ -20,9 +20,9 @@ export default function CTABanner({
           <Link href="/contacto#reservar" className="btn-primary">
             Pedir cita
           </Link>
-          <a href={`tel:${contact.phoneIntlRaw}`} className="btn-secondary">
+          <a href={`tel:${contact.landlineRaw}`} className="btn-secondary">
             <Phone className="h-4 w-4" aria-hidden="true" />
-            Llamar ahora: {contact.phoneIntl}
+            Llamar ahora: {contact.landline}
           </a>
         </div>
       </div>

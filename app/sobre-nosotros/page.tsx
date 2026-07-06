@@ -49,8 +49,9 @@ export default function SobreNosotrosPage() {
               La empresa se fundó en marzo de 1995 con la intención de ofrecer un
               servicio cercano y profesional en Castellón, especializado en la
               electromecánica de camiones. Hoy somos un centro técnico de
-              tacógrafos certificado y taller de electricidad para camiones, con
-              un equipo de 7 profesionales.
+              tacógrafos y limitadores certificado, con servicio de
+              alcoholímetros, y taller de electricidad para camiones, con un
+              equipo de 7 profesionales.
             </p>
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded">

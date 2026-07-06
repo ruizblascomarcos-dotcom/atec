@@ -35,8 +35,9 @@ export default function HomePage() {
             El taller de confianza para tu camión
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/80">
-            Tacógrafos, electricidad, aire acondicionado y básculas. Servicio
-            rápido y próximo para transportistas y flotas en Castellón.
+            Tacógrafos, limitadores, alcoholímetros, electricidad, aire
+            acondicionado y básculas. Servicio rápido y próximo para
+            transportistas y flotas en Castellón.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link href="/contacto#reservar" className="btn-primary">
