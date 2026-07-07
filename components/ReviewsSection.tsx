@@ -1,5 +1,4 @@
-import { Star, ExternalLink } from "lucide-react";
-import { contact } from "@/lib/data";
+import { Star } from "lucide-react";
 
 type Review = {
   name: string;
@@ -41,8 +40,8 @@ const reviews: Review[] = [
   },
 ];
 
-// Mismo enlace de Google Maps que ya se usa en /contacto (contact.maps).
-const GOOGLE_MAPS_REVIEWS_URL = contact.maps;
+const GOOGLE_MAPS_REVIEWS_URL =
+  "https://www.google.com/maps/place/Atec+SL/@39.9730581,-0.0738243,836m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd6000ae9fda473f:0x81256745d0febf1d!8m2!3d39.9730581!4d-0.0712494!16s%2Fg%2F11b6zyc7bw?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
 
 function StarRow({ className }: { className?: string }) {
   return (
@@ -56,18 +55,17 @@ function StarRow({ className }: { className?: string }) {
 
 export default function ReviewsSection() {
   return (
-    <section>
-      {/* Cabecera — banda diagonal con la nota global */}
-      <div
-        className="relative bg-primary pb-16 pt-16 text-center text-white sm:pb-20 sm:pt-20"
-        style={{ clipPath: "polygon(0 0, 100% 0, 100% 92%, 0 100%)" }}
-      >
-        <div className="container-atec">
+    <section className="container-atec py-16 sm:py-20">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[300px_1fr] lg:gap-10">
+        {/* Nota global — panel con banda diagonal */}
+        <div
+          className="flex flex-col items-center justify-center rounded-lg bg-primary p-10 text-center text-white lg:items-start lg:rounded-none lg:text-left lg:[clip-path:polygon(0_0,100%_0,88%_100%,0_100%)]"
+        >
           <h2 className="text-sm font-semibold uppercase tracking-widest text-white/90">
             Opiniones verificadas en Google
           </h2>
           <div
-            className="mt-5 flex items-center justify-center gap-3"
+            className="mt-5 flex items-center gap-3"
             role="img"
             aria-label="Puntuación 4,9 de 5 estrellas"
           >
@@ -79,50 +77,47 @@ export default function ReviewsSection() {
             </span>
             <StarRow className="h-5 [&_svg]:h-5 [&_svg]:w-5" />
           </div>
-          <p className="mt-3 text-white/80">
-            Basado en más de 700 reseñas
-          </p>
+          <p className="mt-3 text-white/80">Basado en más de 700 reseñas</p>
         </div>
-      </div>
 
-      {/* Grid de reseñas */}
-      <div className="container-atec -mt-6 pb-16 sm:-mt-8 sm:pb-20">
-        <div className="flex flex-wrap justify-center gap-6">
-          {reviews.map((review) => (
-            <article
-              key={review.name}
-              className="flex w-full flex-col rounded-lg border border-border bg-white p-6 shadow-sm sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
-            >
-              <StarRow className="text-primary" />
-              <span className="sr-only">5 de 5 estrellas</span>
-              <p className="mt-4 flex-1 text-sm text-dark">{review.text}</p>
-              <div className="mt-5 flex items-center gap-3">
-                <span
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/[0.12] text-sm font-semibold text-primary"
-                  aria-hidden="true"
-                >
-                  {review.initials}
-                </span>
-                <div>
-                  <p className="text-sm font-semibold">{review.name}</p>
-                  <p className="text-xs text-muted">{review.timeAgo}</p>
+        {/* Grid de reseñas */}
+        <div>
+          <div className="flex flex-wrap justify-center gap-6 lg:justify-start">
+            {reviews.map((review) => (
+              <article
+                key={review.name}
+                className="flex w-full flex-col rounded-lg border border-border bg-white p-6 shadow-sm sm:w-[calc(50%-0.75rem)]"
+              >
+                <StarRow className="text-primary" />
+                <span className="sr-only">5 de 5 estrellas</span>
+                <p className="mt-4 flex-1 text-sm text-dark">{review.text}</p>
+                <div className="mt-5 flex items-center gap-3">
+                  <span
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/[0.12] text-sm font-semibold text-primary"
+                    aria-hidden="true"
+                  >
+                    {review.initials}
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold">{review.name}</p>
+                    <p className="text-xs text-muted">{review.timeAgo}</p>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
-        </div>
+              </article>
+            ))}
+          </div>
 
-        {/* CTA final */}
-        <div className="mt-10 text-center">
-          <a
-            href={GOOGLE_MAPS_REVIEWS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            Ver todas las reseñas en Google
-            <ExternalLink className="h-4 w-4" aria-hidden="true" />
-          </a>
+          {/* CTA final */}
+          <div className="mt-10 text-center lg:text-left">
+            <a
+              href={GOOGLE_MAPS_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Ver todas las reseñas en Google
+            </a>
+          </div>
         </div>
       </div>
     </section>
