@@ -2,7 +2,28 @@ import Link from "next/link";
 import { Clock, ShieldCheck, MapPin } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import CTABanner from "@/components/CTABanner";
-import { services } from "@/lib/data";
+import ReviewsSection from "@/components/ReviewsSection";
+import { services, contact } from "@/lib/data";
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "ATEC SL",
+  url: "https://www.atecsal.es",
+  telephone: contact.phoneIntl,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Av. de Lairón, 59, Ciudad del Transporte",
+    addressLocality: "Castellón de la Plana",
+    postalCode: "12006",
+    addressCountry: "ES",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "700",
+  },
+};
 
 const valueProps = [
   {
@@ -25,6 +46,11 @@ const valueProps = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+
       {/* Sección 1 — Hero */}
       <section className="bg-dark text-white">
         <div className="container-atec py-20 sm:py-28">
@@ -117,7 +143,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Sección 6 — CTA final */}
+      {/* Sección 6 — Reseñas */}
+      <ReviewsSection />
+
+      {/* Sección 7 — CTA final */}
       <CTABanner />
     </>
   );
