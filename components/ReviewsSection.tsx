@@ -32,12 +32,6 @@ const reviews: Review[] = [
     timeAgo: "Hace 6 meses",
     text: "Excelente taller con gente muy profesional, rapido en atenderte y solucionar el problema, mucha amabilidad y muy buen trato con el cliente y un trato muy personal, lo recomiendo al 100%",
   },
-  {
-    name: "Miguel Martí Burlacu",
-    initials: "MM",
-    timeAgo: "Hace 1 año",
-    text: "Excelente trato! Nos atendieron Ángel y Mario, muy amables y sobretodo muy sinceros, en todo momento nos aconsejaron para mantenimiento futuro y detectaron enseguida la avería. Me alegra mucho que me recomendaran este taller tan profesional!",
-  },
 ];
 
 const GOOGLE_MAPS_REVIEWS_URL =
@@ -108,7 +102,7 @@ export default function ReviewsSection() {
           </div>
 
           {/* CTA final */}
-          <div className="mt-10 text-center lg:text-left">
+          <div className="mt-10 text-center">
             <a
               href={GOOGLE_MAPS_REVIEWS_URL}
               target="_blank"
